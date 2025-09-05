@@ -1,0 +1,527 @@
+
+body {
+    background-color: #f3f5f7;
+    height: 4000px;
+}
+
+.wrapper {
+    
+    width: 1200px;
+    margin: 0 360px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;	
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.header .wrapper{
+    padding: 29px 0;
+    display: flex;
+}
+
+
+
+.logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background: url(../images/logo.png);
+    font-size: 0;
+}
+
+
+.nav{
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+    
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+
+.nav li a {
+    font-size: 19px;
+    padding: 8px;
+    line-height: 34px;
+}
+
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索 */
+.search{
+    position: relative;
+    width: 412px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f3f5f7;
+    margin-left: 80px;
+}
+
+.search input{
+    width: 412px;
+    height: 40px;
+    /* 自带边框为0，不显示 */
+    border: 0;
+    /* 背景色为透明 */
+    background: transparent;
+    padding-left: 20px;
+    padding-right: 30px;
+    /* 去点黑框 */
+    outline: 0;
+}
+
+.search .icon-fangdajing {
+    position: absolute;
+    font-size: 20px;
+    left: 375px;
+    top: 5px;
+    color: #00a4ff;
+}
+/* user */
+.user{
+    margin-left: 32px;
+}
+
+.user img{
+    vertical-align: middle;
+}
+
+.user span {
+    color: #666;
+}
+
+/* header end */
+
+/* banner start */
+
+.banner {
+
+    margin-top: 100px;
+    width:  100%;
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    /* 主轴俩测对齐 */
+    
+    justify-content: space-between;
+    align-items: center;
+    height: 420px;
+    background: url(../uploads/banner.png);
+}
+
+.banner .left {
+    width: 191px;
+    height: 420px;
+    padding-top: 3px;
+    background-color: rgb(0,0,0,0.42);
+}
+
+.banner .left li a {
+    display: flex;
+    justify-content: space-between;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: #fff;
+
+    transition: all .3s;
+}
+
+.banner .left li a:hover{
+    background-color: rgb(0,0,0,0.3);
+    padding-left: 35px;
+    color: #00a4ff;
+}
+
+.banner .right {
+	width: 218px;
+	height: 305px;
+    padding-top: 18px;
+    /* margin:60px 0 56px; */
+    background-color: #209dd5;
+    border-radius: 15px;
+
+}
+
+.banner .right h3{
+    height: 31px;
+    color: #fff;
+    padding-left: 14px;
+    font-size: 15px;
+}
+
+.banner .content {
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding:14px;
+}
+
+.banner .content dl {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.banner .content dt {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.banner .content dd {
+    font-size: 12px;
+    margin: 8px 0;
+    color: #7d7d7d;
+    
+    
+}
+
+.banner .content dd span {
+    color: #00a4ff;
+}
+
+.banner .content a {
+    display: block;
+    width: 190px;
+    height: 32px;font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #00a4ff;
+    border-radius: 16px;
+    
+}
+
+.banner .content a:hover{
+    background-color: #0092cb;
+    box-shadow: 3px 5px rgb(0,0,0,0.1);
+}
+
+/* banner end */
+
+/* recommend strat */
+
+.recommend {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    position: sticky;
+    top: 100px;
+    z-index: 99;
+    height: 60px;
+    background-color: #fff;
+    margin: 12px 360px;
+    line-height: 60px;
+    padding: 0 20px;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+}
+
+.recommend h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00a4ff;
+}
+
+.recommend ul {
+    display: flex;
+    flex: 1;
+}
+
+.recommend ul a {
+
+    font-size: 18px;
+    padding: 0 24px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.recommend ul a:hover{
+    color: rgba(0,0,0,.3);
+}
+.recommend ul li:last-child a {
+    border-right: 0;
+}
+
+.recommend .mod {
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+/* recommend end */
+
+/* 课程模块start */
+
+.hd{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 30px 0 15px ;
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.hd .a-all {
+    font-size: 14px;
+    color: #999999;
+}
+
+
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bd li {
+    position: relative;
+    width: 228px;
+    height: 271px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.bd a {
+    display: block;
+    height: 100%;
+    transition: all .3s;
+}
+
+.bd a:hover{
+    position: absolute;
+    margin-top: -5px;
+    box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+.bd h4 {
+    height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 20px 0 20px ;
+}
+
+.bd a p {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #999999;
+}
+
+.bd a span {
+    font-size: 14px;
+    color: #fa6400;
+}
+
+/* 课程模块 end */
+
+/* 前端模块 start */
+.hd ul {
+    width: 276px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hd ul a {
+    font-size: 16px;
+    line-height: 40px;
+    
+}
+
+.hd .hot {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+    height: 386px;
+    background: url(../uploads/web_left.png);
+}
+
+.bd .right {
+    width: 957px;
+    height: 386px;
+    background-color: #fff;
+}
+
+.bd .right .top {
+    height: 100px;
+    background: url(../uploads/web_top.png);
+}
+
+.bd .right li {
+    margin-top: 15px;
+}
+
+/* 前端模块end */
+
+/* python模块 start */
+
+.bd .p-left {
+    width: 228px;
+    height: 386px;
+    background: url(../uploads/python_left.png);
+}
+
+.bd .p-right {
+    width: 957px;
+    height: 386px;
+    background-color: #fff;
+}
+
+.bd .p-right .top {
+    height: 100px;
+    background: url(../uploads/python_top.png);
+}
+
+.bd .p-right li {
+    margin-top: 15px;
+}
+
+/* python模块 end */
+
+/* 人工智能开发模块 */
+.only-bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.only-bd li {
+    position: relative;
+    width: 228px;
+    height: 271px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.only-bd a {
+    display: block;
+    height: 100%;
+    transition: all .3s;
+}
+
+.only-bd a:hover{
+    position: absolute;
+    margin-top: -5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+}
+.only-bd h4 {
+    height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 20px 0 20px ;
+}
+
+.only-bd a p {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #999999;
+}
+
+.only-bd a span {
+    font-size: 14px;
+    color: #fa6400;
+}
+
+.end-wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1920px;
+    padding: 0 360px;
+    /* background-color: #009222; */
+}
+
+.end-wrapper .end-left{
+	width: 432px;
+	height: 148px;
+    
+}
+
+.end-wrapper .end-right {
+    display: flex;
+    justify-content: space-between;
+	width: 516px;
+	height: 151px;
+    
+}
+
+.end-left .end-img {
+    width: 195px;
+    height: 41px;
+    background:url(../images/logo.png);
+}
+
+.end-left p {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.end-left a{
+
+    display: block;
+    margin-top: 11px;
+    width: 120px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 1px #999;
+    font-size: 16px;
+    color: #00a4ff;
+
+}
+
+.end-left a:hover{
+    border: solid 1px #00a4ff;
+    box-shadow: 1px 2px #0092cb;
+}
+
+.end-wrapper .end-right dl:last-child dd{
+    margin-right: 8px;
+}
+
+.end-wrapper .end-right dt{
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.end-wrapper .end-right dl a{
+    padding: 2px;
+    font-size: 14px;
+    color: #666;
+}
+
+.end-wrapper .end-right dl a:hover{
+    background-color: #0092cb;
+    color: #0092cb;
+}
+
+
+
+
+
+
+
+

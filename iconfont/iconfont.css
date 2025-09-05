@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4603397 */
+  src: url('iconfont.woff2?t=1735998730033') format('woff2'),
+       url('iconfont.woff?t=1735998730033') format('woff'),
+       url('iconfont.ttf?t=1735998730033') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-renwu-ren:before {
+  content: "\e749";
+}
+
+.icon-anquan:before {
+  content: "\ec4d";
+}
+
+.icon-24gl-lock:before {
+  content: "\e9d4";
+}
+
+.icon-shouji:before {
+  content: "\e612";
+}
+
+.icon-arrow-down:before {
+  content: "\e665";
+}
+
+.icon-ashbin:before {
+  content: "\e666";
+}
+
+.icon-arrow-right:before {
+  content: "\e667";
+}
+
+.icon-browse:before {
+  content: "\e668";
+}
+
+.icon-bottom:before {
+  content: "\e669";
+}
+
+.icon-back:before {
+  content: "\e66a";
+}
+
+.icon-arrow-double-left:before {
+  content: "\e66b";
+}
+
+.icon-direction-down:before {
+  content: "\e66c";
+}
+
+.icon-forward:before {
+  content: "\e671";
+}
+
+.icon-import:before {
+  content: "\e675";
+}
+
+.icon-search:before {
+  content: "\e67d";
+}
+

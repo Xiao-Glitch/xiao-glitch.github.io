@@ -1,0 +1,41 @@
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <title>Ad Placement API HTML5 demo</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script async
+            data-adbreak-test="on"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            crossorigin="anonymous">
+      </script>
+    </head>
+    <body>
+      <canvas id="gameContainer" height="300px" width="300px"></canvas>
+      <br>
+      <button id="playButton">Play</button>
+      <button style="display:none" id="headsButton">Heads</button>
+      <button style="display:none" id="tailsButton">Tails</button>
+
+      <h2>测试广告</h2>
+
+      <ins  class="adsbygoogle"
+            style="display:block; width: 300px; height: 200px;"
+            data-adtest="on"
+            data-ad-client="ca-pub-8762409671882266"
+            data-ad-slot="5701043630"
+            data-ad-format="auto"
+      ></ins>
+
+      <script>
+        window.addEventListener('load', function() {
+          const ads = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status])');
+          ads.forEach(() => (adsbygoogle = window.adsbygoogle || []).push({}));
+        });
+        // window.adsbygoogle = window.adsbygoogle || [];
+        // var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+        // console.log(adBreak);
+        
+      </script>
+      <script src="./js/game.js"></script>
+    </body>
+  </html>
